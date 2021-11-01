@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Mainscreen"
+        android:background="@drawable/bgphone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/contrail_one"
+                android:text="E-STEM "
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/purple_500"
+                android:textSize="55sp"
+                android:textStyle="bold"></TextView>
+
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="550dp"
+                    android:rowCount="3"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:alignmentMode="alignMargins"
+                    android:layout_marginTop="40dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="152dp"
+                        android:layout_height="130dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="1"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1`"
+                        android:layout_margin="12dp"
+                        android:layout_marginLeft="30dp"
+                        app:cardCornerRadius="12dp">
+
+                        <ImageView
+                            android:id="@+id/btnstem"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/stemword" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="110dp"
+                            android:text="មុខវិជ្ជាSTEM"
+                            android:textAlignment="center"
+                            android:textColor="@color/purple_500"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_height="130dp"
+                        android:layout_width="wrap_content"
+                        android:layout_columnWeight="1`"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="12dp"
+                        android:layout_margin="12dp"
+                        android:layout_marginLeft="15dp">
+
+                        <ImageView
+                            android:id="@+id/btnquiz"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/quizmain"
+                            android:layout_marginLeft="28dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/purple_500"
+                            android:text="កម្រងសំណួររំឭក"
+                            android:textStyle="bold"
+                            android:textSize="23sp"
+                            android:layout_marginTop="110dp"
+                            android:layout_marginLeft="15dp"
+                            android:textAlignment="center"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="154dp"
+                        android:layout_height="130dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1`"
+                        android:layout_margin="12dp"
+                        android:layout_marginLeft="30dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <ImageView
+                            android:id="@+id/btnreview"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/reviewlesson" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="110dp"
+                            android:text="រំឭកមេរៀន"
+                            android:textAlignment="center"
+                            android:textColor="@color/purple_500"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="154dp"
+                        android:layout_height="130dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1`"
+                        android:layout_margin="12dp"
+                        android:layout_marginLeft="15dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <ImageView
+                            android:id="@+id/btnreminder"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/reminder" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="110dp"
+                            android:text="រំឭកដាស់តឿន"
+                            android:textAlignment="center"
+                            android:textColor="@color/purple_500"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="156dp"
+                        android:layout_height="130dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1`"
+                        android:layout_margin="12dp"
+                        android:layout_marginLeft="30dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <ImageView
+                            android:id="@+id/btnattendence"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/attendence" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="110dp"
+                            android:text="ស្រង់វត្តមាន"
+                            android:textAlignment="center"
+                            android:textColor="@color/purple_500"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="155dp"
+                        android:layout_height="130dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1`"
+                        android:layout_margin="12dp"
+                        android:layout_marginLeft="15dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <ImageView
+                            android:id="@+id/btnshare"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/sharing" />
+
+                        <TextView
+                            android:layout_width="162dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="115dp"
+                            android:text="ចែករំលែកចំណេះដឹង"
+                            android:textAlignment="center"
+                            android:textColor="@color/purple_500"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+
+                </GridLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
